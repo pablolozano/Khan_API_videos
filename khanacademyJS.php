@@ -21,7 +21,7 @@
                                     $(htmlID).append("<ul><li id=" + this.id + " class='child'>" + this.translated_description + "</li></ul>");
                                     getVideo(this.id);
                                 }else{
-                                    $(htmlID).append("<li><a href='http://localhost/khan/pages/khanacademyJS.php?searchParam=" + this.id +"'>" + this.translated_title + "<\a></li>");
+                                    $(htmlID).append("<li><a href='khanacademyJS.php?searchParam=" + this.id +"'>" + this.translated_title + "<\a></li>");
                                     $(htmlID).append("<ul><li id=" + this.id + " class='child'>" + this.translated_description + "</li></ul>");
                                 }
                             }
@@ -47,7 +47,7 @@
     </script>
 </head>
 <body>
-    <a href="http://localhost/khan/pages/khanacademyJS.php?searchParam=math">Principal</a>
+    <a href="khanacademyJS.php?searchParam=math">Principal</a>
 <div id="ytLink"></div>
 <script>
     <?php if(isset($_GET['searchParam'])){?>
